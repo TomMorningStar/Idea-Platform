@@ -1,0 +1,46 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--text-color);
+
+  .stops {
+    margin: 0 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+  }
+}
+
+.name {
+  font-size: 16px;
+}
+
+.time {
+  line-height: 100%;
+  font-size: 32px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: var(--orange-secondary);
+  }
+}
